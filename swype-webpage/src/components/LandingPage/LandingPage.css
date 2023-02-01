@@ -1,0 +1,46 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .logo {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  
+  .title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .learn-more-button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #0c6fcb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
