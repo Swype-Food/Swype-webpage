@@ -1,46 +1,89 @@
-.landing-page {
-    display: flex;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+
+}
+
+.info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  /* margin-left: 15%s; */
+}
+
+.button {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: large;
+  color: #5C6CCC;
+  box-sizing: border-box;
+  position: absolute;
+  width: 40%;
+  height: 5%;
+  background: rgba(71, 148, 215, 0.25);
+  border: 2px solid #5C6CCC;
+  border-radius: 30px;
+}
+
+.infoText {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.swype{
+  color: #5C6CCC;
+}
+
+.info h1 {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 10000;
+  font-size: 56px;
+  line-height: 56px;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+}
+
+.info h2{
+  padding-top: 2%;
+}
+
+.logo {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  object-fit: cover;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+
+  .button{
+    height: 7%;
+    width: 80%;
+  }
+  .container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9;
   }
-  
+  .info{
+    margin-top: 10%;
+    flex-basis: 100%;
+  }
   .logo {
-    width: 200px;
-    margin-bottom: 50px;
+    margin-top: 17%;
+    flex-basis: 100%;
   }
-  
-  .title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 50px;
-  }
-  
-  .learn-more-button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .learn-more-button:hover {
-    background-color: #0c6fcb;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+}
